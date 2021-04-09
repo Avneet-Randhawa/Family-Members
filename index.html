@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>
+        Family Members
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Doraemon.png">
+</head>
+<body>
+    
+    
+    </div>
+        <h1><b><i>Family Members Of Doraemon</i></b></h1>
+        <img id="album_img" src="Book.png"></div><div>
+        <label id="text"><b><i>The Family Book</i></b></label></div><div>
+       <button id="switchImage" onclick="change()"><b><i>Next</i></b></button></div>
+
+    
+</body>
+<script>
+    var album=["http://127.0.0.1:5500/Book.png","https://www.transparentpng.com/thumb/doraemon/CXMDEH-doraemon-png-icon.png","https://upload.wikimedia.org/wikipedia/en/3/3f/NobitaNobi.png","https://ami.animecharactersdatabase.com/uploads/chars/35893-726355249.jpg","https://drawiteazy.files.wordpress.com/2016/06/nobisuke.jpg?w=320"]
+    var text=["The Family Book","Doraemon","Nobita Nobi","Tomako Nobi (Nobita's Mothher)","Nobisuke (Nobita's Dad)"];
+    var imageNumber=0;
+    function change(){
+        document.getElementById("album_img").src=album[imageNumber];
+        document.getElementById("text").innerHTML=text[imageNumber];
+        imageNumber++;
+        if (imageNumber==5){
+            imageNumber=0;
+        }
+        console.log(imageNumber);
+    }
+
+</script>
+</html>
